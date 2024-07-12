@@ -1,9 +1,14 @@
+'use client'
+ 
+import { usePathname } from 'next/navigation'
 import { Icon } from "@iconify/react";
 import Link from "next/link";
+import Image from 'next/image'
+import Logo from '../img/logo.png'
 
 const navLinks = [
-  { title: "Home", link: "", style: "" },
-  { title: "About Us", link: "", style: "" },
+  { title: "Home", link: "/", style: "" },
+  { title: "About Us", link: "/about", style: "" },
   { title: "Academics", link: "", style: "" },
   { title: "Admissions", link: "", style: "" },
   { title: "Student Life", link: "", style: "" },
@@ -11,6 +16,9 @@ const navLinks = [
 ];
 
 const Header = () => {
+
+  const pathname = usePathname()
+
   return (
     <header className="flex flex-col gap-4">
       <div className=" w-full bg-[#FFDECC] rounded-lg border border-black p-2 flex items-center justify-center gap-1">
@@ -23,14 +31,14 @@ const Header = () => {
         />
       </div>
       <nav className=" font-medium flex justify-between rounded-lg border border-black">
-        <div className=" p-3 bg-[#FF8D4D] rounded-l-lg border-r border-black">
-            {/* <img src="/public/vercel.svg" alt="" srcset="" /> */}
+        <div className=" flex items-center gap-1 p-3 bg-[#FF8D4D] rounded-l-lg border-r border-black">
+            <Image src={Logo} alt="logo" width={20} height={20}/>
           <h3>Little Learners</h3>
         </div>
-        <ul className=" flex">
+        <ul className=" hidden md:flex">
           {navLinks.map((navlink) => (
             <li key={navlink.title}>
-              <Link href={navlink.link} className={`${navlink.title == "Contact" ? "rounded-r-lg" : ""} hover:bg-[#FFDECC] p-3 px-4 flex justify-center items-center border-l border-black`}>{navlink.title}</Link>
+              <Link href={navlink.link} className={`${navlink.title == "Contact" ? "rounded-r-lg" : ""} ${pathname === navlink.link? 'bg-[#FFDECC]' : 'hover:bg-[#FFDECC]' } p-3 px-4 flex justify-center items-center border-l border-black`}>{navlink.title}</Link>
             </li>
           ))}
         </ul>

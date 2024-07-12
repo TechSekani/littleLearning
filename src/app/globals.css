@@ -2,11 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-/* @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap'); */
-@font-face {
-    font-family: outfit;
-    src: url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
-}
 
 :root {
   --foreground-rgb: 0, 0, 0;
@@ -22,10 +17,6 @@
   }
 }
 
-body {
-  font-family: outfit, sans-serif;
-  font-size: 15px;
-}
 
 @layer utilities {
   .text-balance {
