@@ -1,21 +1,20 @@
 "use client";
 import { Icon } from "@iconify/react";
 import { useState } from "react";
+import { FAQ } from "../data";
 
-const Card = () => {
+const Card = ({question, answer}) => {
   const [isClose, setIsClose] = useState(true);
   return (
-    <div className={`${isClose ? 'bg-[#FFEFE5]': 'bg-white'}  h-fit md:w-[48%] p-6 border border-black rounded-lg transition-all duration-700`}>
+    <div className={`${isClose ? 'bg-[#FFEFE5]': 'bg-white'}  h-fit w-full lg:w-[48%] p-6 border border-black rounded-lg transition-all duration-700`}>
       <div className="[&>p]:font-medium flex items-center justify-between">
-        <p>What are the school hours at Little Learners Academy?</p>
+        <p>{question}</p>
         <span className=" cursor-pointer h-fit p-1 border border-black rounded-md" onClick={() => setIsClose(!isClose)}>
           <Icon icon={isClose === true? "ic:round-plus":"ic:round-minus"} width="20" height="20" />
         </span>
       </div>
       <p className={`${isClose === true? 'hidden': '' } mt-2 pt-2 text-sm w-[90%] border-t border-black`}>
-        Our school hours are from 8:00 AM to 3:00 PM, Monday to Friday. We also
-        offer extended care options for parents who need early drop-off or late
-        pick-up.
+        {answer}
       </p>
     </div>
   );
@@ -36,12 +35,11 @@ const FAQs = () => {
         informed decisions for your child's education.
       </p>
       <div className=" mt-14 flex flex-wrap justify-between gap-5 ">
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
+        {
+          FAQ.map(faq => (
+            <Card key={faq.id} question={faq.question} answer={faq.answer} />
+          ))
+        }
       </div>
     </section>
   );

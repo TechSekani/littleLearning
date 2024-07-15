@@ -7,7 +7,7 @@ import Testimonial from "./components/Testimonial";
 
 export default function Home() {
   return (
-    <section className="flex flex-col items-center justify-center py-2 md:px-14">
+    <section className="flex flex-col items-center justify-center py-2 md:px-10">
       <Hero />
       <Benefit />
       <Testimonial />

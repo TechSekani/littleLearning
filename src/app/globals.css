@@ -3,9 +3,6 @@
 @tailwind utilities;
 
 
-*{
-  outline: 1px solid red;
-}
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;

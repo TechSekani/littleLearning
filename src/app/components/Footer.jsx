@@ -20,7 +20,7 @@ const footerLinks = [
 
 const Footer = () => {
   return (
-    <footer className=" border border-black rounded-lg shadow-[8px_8px_0_#000] px-8 md:px-12 py-8 my-4 mt:12 md:mt-20 bg-white ">
+    <footer className=" border border-black rounded-lg shadow-[8px_8px_0_#000] px-8 py-8 my-4 mt:12 md:mt-20 bg-white ">
       <div className=" flex flex-col md:flex-row justify-around gap-4">
         <div className=" text-center md:text-start md:w-[35%]">
           <div className="[&>h3]:font-semibold flex justify-center md:justify-start items-center gap-1 mb-3">
@@ -65,7 +65,7 @@ const Footer = () => {
           ))}
         </div>
       </div>
-      <div className=" my-5 md:mx-5 py-5 flex flex-col md:flex-row justify-between border-y border-black">
+      <div className=" my-5 md:px-8 py-5 flex flex-col md:flex-row justify-between border-y border-black">
         <div className="md:[&>*]:px-3 flex flex-col md:flex-row">
           <p>Terms of Service</p>
           <p className=" md:border-x border-black">Privacy Policy</p>

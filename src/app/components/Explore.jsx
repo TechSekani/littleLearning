@@ -4,11 +4,11 @@ import { Icon } from "@iconify/react";
 import line from '../img/dottedline.png'
 
 const Card = ({ title, text }) => (
-  <div className=" relative [&>p]:text-sm flex flex-col p-12 h-[380px] md:w-[48%] text-center border border-black rounded-lg shadow-[4px_4px_0_#000]">
+  <div className=" relative [&>p]:text-sm flex flex-col p-12 lg:h-[380px] md:w-[46%] text-center border border-black rounded-lg shadow-[4px_4px_0_#000]">
     <h3 className=" font-raleway font-bold text-2xl">{title}</h3>
     <Image src={line} className=' my-5' />
     <p>{text}</p>
-    <button className="absolute bottom-10 bg-[#FFDECC] p-2 mt-20 w-[80%] flex justify-center gap-2 border border-black rounded-lg shadow-[4px_4px_0_#000]">
+    <button className=" lg:absolute lg:bottom-10 bg-[#FFDECC] p-2 lg:px-14 mt-10 lg:mt-20 w-full lg:w-[81%] flex justify-center gap-2 border border-black rounded-lg shadow-[4px_4px_0_#000]">
       Learn More{" "}
       <Icon
         icon="hugeicons:arrow-right-02"

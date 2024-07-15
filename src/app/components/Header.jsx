@@ -30,12 +30,12 @@ const Header = () => {
           className=" cursor-pointer hover:text-[#FF8D4D]"
         />
       </div>
-      <nav className=" hidden font-medium md:flex justify-between rounded-lg border border-black">
+      <nav className=" hidden font-medium lg:flex justify-between rounded-lg border border-black">
         <div className=" flex items-center gap-1 p-3 bg-[#FF8D4D] rounded-l-lg border-r border-black">
           <Image src={Logo} alt="logo" width={20} height={20} />
           <h3>Little Learners</h3>
         </div>
-        <ul className=" hidden md:flex">
+        <ul className="flex">
           {navLinks.map((navlink) => (
             <li key={navlink.title}>
               <Link
