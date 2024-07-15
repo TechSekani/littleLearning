@@ -3,7 +3,7 @@ import heroImg from "../img/heroImg.png";
 
 const Hero = () => {
   return (
-    <div className=" my-10 md:flex gap-6">
+    <div className=" mt-24 md:mt-0 my-10 md:flex gap-6">
       <Image src={heroImg} alt="Little Learners" className=" md:w-[40%]" />
       <article className=" mt-5 md:mt-0 md:w-[60%] flex flex-col justify-center text-center md:text-start">
         <p className=" mx-auto md:mx-0 w-fit mb-2 border-b border-black">Welcome to Little Learners Academy</p>
