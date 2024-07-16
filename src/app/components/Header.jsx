@@ -10,8 +10,8 @@ import MobileNav from "./MobileNav";
 const navLinks = [
   { title: "Home", link: "/", style: "" },
   { title: "About Us", link: "/about", style: "" },
-  { title: "Academics", link: "", style: "" },
-  { title: "Admissions", link: "", style: "" },
+  { title: "Academics", link: "/academics", style: "" },
+  { title: "Admissions", link: "/admissions", style: "" },
   { title: "Student Life", link: "", style: "" },
   { title: "Contact", link: "", style: "" },
 ];

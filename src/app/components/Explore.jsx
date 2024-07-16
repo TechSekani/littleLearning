@@ -1,21 +1,20 @@
 import Image from "next/image";
 import { PAGES } from "../data";
 import { Icon } from "@iconify/react";
-import line from '../img/dottedline.png'
+import line from "../img/dottedline.png";
+import Link from "next/link";
 
-const Card = ({ title, text }) => (
-  <div className=" relative [&>p]:text-sm flex flex-col p-12 lg:h-[380px] md:w-[46%] text-center border border-black rounded-lg shadow-[4px_4px_0_#000]">
+const Card = ({ title, text, link }) => (
+  <div className=" bg-white relative [&>p]:text-sm flex flex-col p-12 lg:h-[380px] md:w-[46%] text-center border border-black rounded-lg shadow-[4px_4px_0_#000]">
     <h3 className=" font-raleway font-bold text-2xl">{title}</h3>
-    <Image src={line} className=' my-5' />
+    <Image src={line} className=" my-5" />
     <p>{text}</p>
-    <button className=" lg:absolute lg:bottom-10 bg-[#FFDECC] p-2 lg:px-14 mt-10 lg:mt-20 w-full lg:w-[81%] flex justify-center gap-2 border border-black rounded-lg shadow-[4px_4px_0_#000]">
-      Learn More{" "}
-      <Icon
-        icon="hugeicons:arrow-right-02"
-        width="24"
-        height="24"
-      />
-    </button>
+    <Link href={link}>
+      <button className=" lg:absolute lg:bottom-10 bg-[#FFDECC] p-2 lg:px-14 mt-10 lg:mt-20 w-full lg:w-[81%] flex justify-center gap-2 border border-black rounded-lg shadow-[4px_4px_0_#000]">
+        Learn More{" "}
+        <Icon icon="hugeicons:arrow-right-02" width="24" height="24" />
+      </button>
+    </Link>
   </div>
 );
 

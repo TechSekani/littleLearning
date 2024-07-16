@@ -24,7 +24,7 @@ const Card = (teacher) => (
 
 const Expertise = () => {
   return (
-    <section className=" my-12 md:my-16 flex flex-col items-center">
+    <section className="md:px-20 my-12 md:my-16 flex flex-col items-center">
       <p className=" mb-4 py-1 px-3 text-xs rounded-lg border border-black bg-white">
         Our Teachers With Expertise
       </p>

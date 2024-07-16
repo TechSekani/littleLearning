@@ -16,7 +16,7 @@ const datas = [
 
 const MissionVision = () => {
   return (
-    <section className=" my-12 md:my-16 flex flex-col items-center">
+    <section className="md:px-20 my-12 md:my-16 flex flex-col items-center">
       <p className=" mb-4 py-1 px-3 text-xs rounded-lg border border-black bg-white">
         Mission & Visions
       </p>
@@ -29,7 +29,7 @@ const MissionVision = () => {
       </p>
       <div className=" mt-14 flex flex-wrap justify-between gap-10 ">
         {datas.map(data => (
-            <div key={data.title} className=" lg:w-[46%] p-8 border border-black rounded-lg shadow-[4px_4px_0_#000]">
+            <div key={data.title} className=" bg-white lg:w-[48%] p-8 border border-black rounded-lg shadow-[4px_4px_0_#000]">
                 <div className=" flex justify-between items-center mb-4">
                     <h3 className=" font-raleway font-bold text-2xl">{data.title}</h3>
                     <span><Icon icon={data.icon} width="42" height="42" /></span>

@@ -2,9 +2,9 @@ import React from "react";
 
 const Overview = () => {
   return (
-    <section className=" mt-24 lg:mt-10 my-10 px-8 py-12 flex flex-col lg:flex-row justify-around items-center gap-2 p-4 text-center border border-black rounded-lg shadow-[4px_4px_0_#000]">
+    <section className=" bg-white mt-24 lg:mt-10 my-10 px-8 py-12 flex flex-col lg:flex-row justify-around items-center gap-2 p-4 text-center border border-black rounded-lg shadow-[4px_4px_0_#000]">
       <div className=" lg:w-[45%] flex flex-col items-center lg:items-start gap-2">
-        <p className=" mb-2 py-2 px-3 text-xs rounded-lg border border-black bg-white">
+        <p className=" mb-2 py-2 px-3 text-xs rounded-lg border border-black">
           Overview
         </p>
         <h3 className=" font-bold text-center lg:text-start text-3xl md:text-4xl font-raleway">

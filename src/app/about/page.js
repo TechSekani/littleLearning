@@ -7,7 +7,7 @@ import Overview from './components/Overview'
 
 const About = () => {
   return (
-    <section className='flex flex-col items-center justify-center py-2 md:px-10'>
+    <section className='flex flex-col items-center justify-center py-2 mx-auto max-w-[1430px]'>
       <Overview />
       <MissionVision />
       <Achievements />

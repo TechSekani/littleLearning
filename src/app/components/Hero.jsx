@@ -3,9 +3,9 @@ import heroImg from "../img/heroImg.png";
 
 const Hero = () => {
   return (
-    <div className=" mt-24 lg:mt-10 my-10 lg:flex gap-6">
-      <Image src={heroImg} alt="Little Learners" className=" lg:w-[45%]" />
-      <article className=" mt-5 lg:mt-0 lg:w-[60%] flex flex-col justify-center text-center lg:text-start">
+    <div className=" mt-24 lg:mt-10 my-10 lg:flex justify-center gap-10">
+      <Image src={heroImg} alt="Little Learners" className=" lg:w-[40%]" />
+      <article className=" mt-5 lg:mt-0 lg:w-[54%] flex flex-col justify-center text-center lg:text-start">
         <p className=" mx-auto lg:mx-0 w-fit mb-2 border-b border-black">Welcome to Little Learners Academy</p>
         <h2 className="[&>span]:text-[#FF8D4D] mb-4 leading-tight font-raleway font-bold text-3xl lg:text-[2.65rem]">
           Where Young Minds Blossom and <span>Dreams Take Flight.</span>
